@@ -1,0 +1,165 @@
+---
+import { Image } from "astro:assets";
+import woodlands_promo from "../assets/woodlands_promo.png";
+import public_art_promo from "../assets/public_art_promo.png";
+import leitner_promo from "../assets/leitner_promo.png";
+import Move_Up_Right from "../assets/move_up_right.svg";
+import "../styles/global.css";
+---
+
+<div
+  id="container"
+  class="flex flex-col items-center w-full max-w-2xl mb-12 px-12"
+>
+  <section class="flex flex-col gap-4 mt-12">
+    <h2 class="text-2xl font-bold">Ed Prado</h2>
+    <p class="text-stone-600 text-lg">
+      I'm a Software Developer based in Ottawa, Canada. Some of my hobbies
+      include reading, listening to audio dramas, and art.
+    </p>
+  </section>
+
+  <section class="w-full flex flex-col gap-4 mt-12">
+    <h2 class="text-2xl font-semibold">Past Experience</h2>
+    <ul>
+      <li class="flex flex-col sm:flex-row justify-between mb-8">
+        <div class="text-xl sm:text-2xl">2025 - Current</div>
+        <div class="flex flex-col sm:text-right">
+          <span class="text-2xl">Natural Resources Canada</span>
+          <span class="text-xl text-stone-500">Frontend Developer</span>
+        </div>
+      </li>
+      <li class="flex flex-col sm:flex-row justify-between mb-8">
+        <div class="text-xl sm:text-2xl">2022 - 2023</div>
+        <div class="flex flex-col sm:text-right">
+          <span class="text-2xl">Adaptive Financial Consulting</span>
+          <span class="text-xl text-stone-500">Full Stack Developer</span>
+        </div>
+      </li>
+      <li class="flex flex-col sm:flex-row justify-between mb-8">
+        <div
+          class="flex flex-row text-2xl items-center gap-2 sm:items-start sm:flex-col sm:gap-0"
+        >
+          <span class="text-xl sm:text-2xl">2021</span>
+          <span class="text-xl text-stone-500">Fall</span>
+        </div>
+        <div class="flex flex-col sm:text-right">
+          <span class="text-2xl sm:text-2xl">Nokia</span>
+          <span class="text-xl text-stone-500">Frontend Developer Intern</span>
+        </div>
+      </li>
+      <li class="flex flex-col sm:flex-row justify-between mb-8">
+        <div
+          class="flex flex-row text-2xl items-center sm:items-start sm:flex-col gap-2"
+        >
+          <span class="text-2xl">2021</span>
+          <span class="text-xl text-stone-500">Summer</span>
+        </div>
+        <div class="flex flex-col sm:text-right">
+          <span class="text-2xl">The Eclectic Connoisseur</span>
+          <span class="text-xl text-stone-500">Frontend Developer Intern</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="w-full flex flex-col gap-4 mt-12">
+    <h2 class="text-2xl font-semibold">Education</h2>
+    <ul>
+      <li class="flex flex-col sm:flex-row justify-between mb-8">
+        <div class="text-2xl">2018 - 2022</div>
+        <div class="flex flex-col sm:text-right">
+          <span class="text-2xl">Algonquin College</span>
+          <span class="text-xl text-stone-500"
+            >Diploma, Computer Programming</span
+          >
+          <span class="text-xl text-stone-500 mt-4">Graduated with Honours</span
+          >
+          <span class="text-xl text-stone-500"
+            >Class Representative for <span
+              class="underline"
+              title="Internet Applications and Web Development">IAWD</span
+            ></span
+          >
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="w-full flex flex-col gap-4 mt-12">
+    <h2 class="text-2xl font-semibold">Recently Made</h2>
+    <ul>
+      <li class="flex flex-col gap-2 justify-between mb-16">
+        <Image
+          src={leitner_promo}
+          alt="The Woodlands App inbox web page."
+          class="mb-2"
+        />
+        <h3 class="text-lg font-semibold">
+          <a
+            href="https://github.com/EdwardPrado/leitner"
+            class="hover:underline">Leitner Extension<Move_Up_Right /></a
+          >
+        </h3>
+        <p>
+          An extension for showing the availability of local library books on <a
+            href="https://hardcover.app/"
+            class="hover:underline">Hardcover.app</a
+          >. Available for both Firefox and Chrome.
+        </p>
+      </li>
+      <li class="flex flex-col gap-2 justify-between mb-16">
+        <Image
+          src={woodlands_promo}
+          alt="The Woodlands App inbox web page."
+          class="mb-2"
+        />
+        <h3 class="text-lg font-semibold">
+          <a href="https://thewoodlands.netlify.app" class="hover:underline"
+            >The Woodlands<Move_Up_Right /></a
+          >
+        </h3>
+        <p>
+          An RSS feed web app made with Supabase and React. Collect feeds from
+          your favourite websites and creators, save articles, and pause
+          subscriptions when you want a break.
+        </p>
+      </li>
+      <li class="flex flex-col gap-2 justify-between mb-16">
+        <Image
+          src={public_art_promo}
+          alt="Public Art Program redesign web page."
+          class="mb-2"
+        />
+        <h3 class="text-lg font-semibold">
+          <a href="https://ottawapublicart.netlify.app/" class="hover:underline"
+            >Ottawa Public Art Program<Move_Up_Right /></a
+          >
+        </h3>
+        <p>
+          A revised design for Ottawa's many "City of Art Collection" and
+          "Public Art Program" web pages. Built with Hugo this project aimed to
+          reduce cognitive load, make content intuitive to find, and highlight
+          the status of initiatives.
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="w-full">
+    <span class="font-bold text-xl">Get in Touch</span>
+    <ol class="flex flex-row gap-4 mt-2 mb-16">
+      <li>
+        <a href="https://www.linkedin.com/in/edward-prado/"
+          >LinkedIn<Move_Up_Right /></a
+        >
+      </li>
+      <li>
+        <a href="mailto:edward.a.prado@gmail.com">Email<Move_Up_Right /></a>
+      </li>
+      <li>
+        <a href="https://github.com/EdwardPrado">Github<Move_Up_Right /></a>
+      </li>
+    </ol>
+  </section>
+</div>

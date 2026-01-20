@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+body {
+  background-color: #faf9f6;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: underline;
+}
+
+a svg {
+  display: inline;
+  height: 50%;
+  width: auto;
+  fill: currentColor;
+}
+
+img {
+  max-width: 100%;
+}
